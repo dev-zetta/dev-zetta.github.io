@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-29T11:10:31.838Z",
+  "generatedAt": "2026-08-29T11:50:15.825Z",
   "profile": {
     "login": "dev-zetta",
     "name": "Gabriel Max",
@@ -12,6 +12,64 @@
     "experienceYears": 16
   },
   "repositories": [
+    {
+      "nameWithOwner": "dev-zetta/dev-zetta.github.io",
+      "name": "dev-zetta.github.io",
+      "owner": "dev-zetta",
+      "url": "https://github.com/dev-zetta/dev-zetta.github.io",
+      "description": "Versioned, commit-verified engineering portfolio for Gabriel Max",
+      "relationship": "owned",
+      "upstream": null,
+      "primaryLanguage": "TypeScript",
+      "topics": [
+        "astro",
+        "github-pages",
+        "portfolio",
+        "semver",
+        "typescript"
+      ],
+      "stars": 0,
+      "archived": false,
+      "updatedAt": "2026-08-29T11:42:53Z",
+      "defaultBranch": "main",
+      "contribution": {
+        "total": 4,
+        "primary": 4,
+        "coauthored": 0,
+        "latest": {
+          "oid": "91c0a31dc55343c1e6c3eb51535bc104409f933f",
+          "date": "2026-08-29T11:42:26Z",
+          "url": "https://github.com/dev-zetta/dev-zetta.github.io/commit/91c0a31dc55343c1e6c3eb51535bc104409f933f",
+          "attribution": "primary"
+        },
+        "commits": [
+          {
+            "oid": "91c0a31dc55343c1e6c3eb51535bc104409f933f",
+            "date": "2026-08-29T11:42:26Z",
+            "url": "https://github.com/dev-zetta/dev-zetta.github.io/commit/91c0a31dc55343c1e6c3eb51535bc104409f933f",
+            "attribution": "primary"
+          },
+          {
+            "oid": "56f0c0118b21bacbf3238731e1477eaed4bc84e5",
+            "date": "2026-08-29T11:40:45Z",
+            "url": "https://github.com/dev-zetta/dev-zetta.github.io/commit/56f0c0118b21bacbf3238731e1477eaed4bc84e5",
+            "attribution": "primary"
+          },
+          {
+            "oid": "d163a8ae0ff98a75ffd8f17ebb20dc3285040e34",
+            "date": "2026-08-29T11:38:26Z",
+            "url": "https://github.com/dev-zetta/dev-zetta.github.io/commit/d163a8ae0ff98a75ffd8f17ebb20dc3285040e34",
+            "attribution": "primary"
+          },
+          {
+            "oid": "6d59d59e923acb5343f47ce5ab661fe25b4f7d5d",
+            "date": "2026-08-29T11:34:59Z",
+            "url": "https://github.com/dev-zetta/dev-zetta.github.io/commit/6d59d59e923acb5343f47ce5ab661fe25b4f7d5d",
+            "attribution": "primary"
+          }
+        ]
+      }
+    },
     {
       "nameWithOwner": "dev-zetta/mkv-muxing-batch-gui",
       "name": "mkv-muxing-batch-gui",

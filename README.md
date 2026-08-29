@@ -8,10 +8,11 @@ The site deliberately excludes private repositories and untouched forks. Project
 
 <!-- portfolio:start -->
 
-_16 public repositories with current commit evidence · data updated 2026-08-29_
+_17 public repositories with current commit evidence · data updated 2026-08-29_
 
 | Project                                                                                       | Relationship                                                                                                      | Primary tech |                                                                                                          Verified contribution | Latest     |
 | --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------------ | -----------------------------------------------------------------------------------------------------------------------------: | ---------- |
+| [dev-zetta/dev-zetta.github.io](https://github.com/dev-zetta/dev-zetta.github.io)             | Owned                                                                                                             | TypeScript   |      [4 commits](https://github.com/dev-zetta/dev-zetta.github.io/commit/91c0a31dc55343c1e6c3eb51535bc104409f933f) (4 primary) | 2026-08-29 |
 | [dev-zetta/mkv-muxing-batch-gui](https://github.com/dev-zetta/mkv-muxing-batch-gui)           | Fork of [yaser01/mkv-muxing-batch-gui](https://github.com/yaser01/mkv-muxing-batch-gui)                           | Python       |   [10 commits](https://github.com/dev-zetta/mkv-muxing-batch-gui/commit/85804940652f7e2ad9137b2386e1ef64d7314c49) (10 primary) | 2026-08-29 |
 | [dev-zetta/xiaomi_redmi_pad_unlocker](https://github.com/dev-zetta/xiaomi_redmi_pad_unlocker) | Owned                                                                                                             | Python       | [1 commit](https://github.com/dev-zetta/xiaomi_redmi_pad_unlocker/commit/4d061b010da5d21fc0d01b0fe6689b389ccf190f) (1 primary) | 2026-08-16 |
 | [dev-zetta/sacd_extract2](https://github.com/dev-zetta/sacd_extract2)                         | Fork of [EuFlo/sacd-ripper](https://github.com/EuFlo/sacd-ripper)                                                 | C            |          [23 commits](https://github.com/dev-zetta/sacd_extract2/commit/3da97fbd103ffeba4452a62453e97507bc103187) (23 primary) | 2026-08-13 |
