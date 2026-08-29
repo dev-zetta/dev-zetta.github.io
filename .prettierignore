@@ -4,3 +4,4 @@ playwright-report/
 test-results/
 .astro/
 src/data/portfolio.generated.json
+CHANGELOG.md
