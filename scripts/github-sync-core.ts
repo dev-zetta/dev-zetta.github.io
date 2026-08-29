@@ -29,11 +29,19 @@ export class GitHubRequestError extends Error {
   }
 }
 
-export function isEligibleStandaloneRepository(repository: {
-  isPrivate: boolean;
-  isFork: boolean;
-}): boolean {
-  return !repository.isPrivate && !repository.isFork;
+export function isEligibleStandaloneRepository(
+  repository: {
+    isPrivate: boolean;
+    isFork: boolean;
+    nameWithOwner?: string;
+  },
+  excludedNames: ReadonlySet<string> = new Set(),
+): boolean {
+  return (
+    !repository.isPrivate &&
+    !repository.isFork &&
+    (!repository.nameWithOwner || !excludedNames.has(repository.nameWithOwner))
+  );
 }
 
 export async function collectForkDelta(

@@ -29,6 +29,8 @@ import {
 } from "../src/lib/portfolio-schema";
 
 const accountLogin = "dev-zetta";
+const portfolioRepository = `${accountLogin}/${accountLogin}.github.io`;
+const excludedRepositories = new Set([portfolioRepository]);
 const apiVersion = "2022-11-28";
 const graphqlUrl = "https://api.github.com/graphql";
 const restUrl = "https://api.github.com";
@@ -284,7 +286,9 @@ async function contributionGraphCandidates(
       throw new Error(`Contribution repository list is truncated for ${year}`);
     }
     for (const item of repositories) {
-      if (isEligibleStandaloneRepository(item.repository)) {
+      if (
+        isEligibleStandaloneRepository(item.repository, excludedRepositories)
+      ) {
         candidates.add(item.repository.nameWithOwner);
       }
     }
@@ -623,7 +627,8 @@ export async function runSync() {
     const metadata =
       ownedMap.get(nameWithOwner) ??
       (await fetchRepository(client, nameWithOwner));
-    if (!isEligibleStandaloneRepository(metadata)) continue;
+    if (!isEligibleStandaloneRepository(metadata, excludedRepositories))
+      continue;
     const repository = await auditStandaloneRepository(
       client,
       metadata,

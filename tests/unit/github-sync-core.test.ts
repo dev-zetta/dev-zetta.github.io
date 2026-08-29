@@ -143,6 +143,16 @@ describe("repository eligibility", () => {
     expect(
       isEligibleStandaloneRepository({ isPrivate: false, isFork: true }),
     ).toBe(false);
+    expect(
+      isEligibleStandaloneRepository(
+        {
+          isPrivate: false,
+          isFork: false,
+          nameWithOwner: "dev-zetta/portfolio",
+        },
+        new Set(["dev-zetta/portfolio"]),
+      ),
+    ).toBe(false);
   });
 });
 

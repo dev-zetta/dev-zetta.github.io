@@ -10,6 +10,8 @@ For every public, non-fork candidate, the current default branch and `gh-pages` 
 
 Search results can contain mirrors. Repositories with identical non-empty sets of attributed commit OIDs are collapsed. The repository recorded by GitHub's contribution collection is preferred, followed by public relationship and repository activity signals. This currently removes a duplicate Klipper history while retaining its canonical upstream repository.
 
+The portfolio repository itself, `dev-zetta/dev-zetta.github.io`, is the sole operational exclusion. Including it would make synchronization recursively unstable: every generated inventory commit would become new evidence and force another inventory commit on the next otherwise unchanged run.
+
 ## Forks
 
 GitHub's normal profile contribution rules exclude commits made only in forks, so every public fork owned by `dev-zetta` receives a separate audit.
@@ -25,6 +27,7 @@ An untouched, identical, or merely stale fork therefore does not qualify. A cont
 - OIDs are deduplicated within a repository.
 - Counts are never summed globally because one commit may be reachable in multiple repository networks.
 - Private repositories and their metadata are removed before snapshot construction.
+- The self-referential portfolio repository is excluded so unchanged synchronization is a true no-op.
 - API truncation, unresolved pagination, rate or permission errors, or partial failure aborts the update before generated files are replaced.
 
 ## Update integrity
