@@ -1,0 +1,398 @@
+---
+import packageJson from "../../package.json";
+import ProjectCard from "../components/ProjectCard.astro";
+import { featuredProjects } from "../data/featured";
+import snapshotJson from "../data/portfolio.generated.json";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { portfolioSnapshotSchema } from "../lib/portfolio-schema";
+
+const snapshot = portfolioSnapshotSchema.parse(snapshotJson);
+const featured = featuredProjects.map((project) => {
+  const repository = snapshot.repositories.find(
+    (candidate) => candidate.nameWithOwner === project.nameWithOwner,
+  );
+  if (!repository)
+    throw new Error(
+      `Featured repository is missing from the verified snapshot: ${project.nameWithOwner}`,
+    );
+  return { ...project, repository };
+});
+const forkCount = snapshot.repositories.filter(
+  (repository) => repository.relationship === "fork",
+).length;
+const externalCount = snapshot.repositories.filter(
+  (repository) => repository.relationship === "external",
+).length;
+const languageCount = new Set(
+  snapshot.repositories
+    .map((repository) => repository.primaryLanguage)
+    .filter(Boolean),
+).size;
+const languages = [
+  ...new Set(
+    snapshot.repositories
+      .map((repository) => repository.primaryLanguage)
+      .filter(Boolean),
+  ),
+].sort((left, right) => String(left).localeCompare(String(right)));
+const updatedDate = new Intl.DateTimeFormat("en", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+  timeZone: "UTC",
+}).format(new Date(snapshot.generatedAt));
+const pageDescription =
+  "Gabriel Max is a senior game and application engineer working across cross-platform software, firmware, media tooling, and local AI.";
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: snapshot.profile.name,
+  url: "https://dev-zetta.github.io/",
+  image: snapshot.profile.avatarUrl,
+  jobTitle: "Senior game and application developer/engineer",
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: snapshot.profile.location,
+  },
+  sameAs: [snapshot.profile.profileUrl],
+};
+---
+
+<BaseLayout
+  title="Gabriel Max · Game & Application Engineer"
+  description={pageDescription}
+  image={snapshot.profile.avatarUrl}
+>
+  <script
+    is:inline
+    type="application/ld+json"
+    set:html={JSON.stringify(personJsonLd)}
+  />
+
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Gabriel Max, back to top">
+      <span aria-hidden="true">GM</span>
+      <span>Gabriel Max</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#featured">Featured</a>
+      <a href="#projects">All work</a>
+      <a href="#about">About</a>
+    </nav>
+    <button
+      class="theme-toggle"
+      type="button"
+      data-theme-toggle
+      aria-label="Switch color theme"
+    >
+      <span class="theme-toggle__icon" aria-hidden="true">◐</span>
+      <span class="theme-toggle__text">Theme</span>
+    </button>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__signal" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="hero__copy">
+        <p class="eyebrow">
+          <span class="status-dot"></span> Available for engineering work
+        </p>
+        <h1 id="hero-title">
+          Engineering reliable software<br /><span
+            >across unusual boundaries.</span
+          >
+        </h1>
+        <p class="hero__lede">
+          Senior game and application developer with {
+            snapshot.profile.experienceYears
+          } years of experience—from renderers and game tooling to firmware, archival
+          media, and local AI.
+        </p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#featured"
+            >Explore selected work</a
+          >
+          <a
+            class="button button--secondary"
+            href={snapshot.profile.profileUrl}
+            rel="me noreferrer"
+          >
+            GitHub profile <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <p class="hero__location">
+          Based in {snapshot.profile.location} · Open to work
+        </p>
+      </div>
+      <div class="hero__portrait-wrap">
+        <div class="hero__portrait-frame">
+          <img
+            class="hero__portrait"
+            src={snapshot.profile.avatarUrl}
+            width="320"
+            height="320"
+            alt="Gabriel Max"
+            fetchpriority="high"
+            referrerpolicy="no-referrer"
+          />
+        </div>
+        <div class="hero__portrait-label">
+          <span>DEV-ZETTA</span>
+          <span>PRAGUE · CZ</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Verified portfolio metrics">
+      <div>
+        <strong>{snapshot.repositories.length}</strong><span
+          >verified public repositories</span
+        >
+      </div>
+      <div><strong>{forkCount}</strong><span>contributed forks</span></div>
+      <div><strong>{externalCount}</strong><span>external codebases</span></div>
+      <div><strong>{languageCount}</strong><span>primary languages</span></div>
+    </section>
+
+    <section class="section" id="featured" aria-labelledby="featured-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Selected engineering</p>
+          <h2 id="featured-title">Work with depth and consequence</h2>
+        </div>
+        <p>
+          Six projects spanning desktop applications, low-level systems,
+          firmware, media preservation, game tooling, and GPU inference.
+        </p>
+      </div>
+      <div class="featured-grid">
+        {
+          featured.map((project) => (
+            <ProjectCard
+              repository={project.repository}
+              summary={project.summary}
+              contributionLabel={project.contribution}
+              featured
+            />
+          ))
+        }
+      </div>
+    </section>
+
+    <section
+      class="section section--projects"
+      id="projects"
+      aria-labelledby="projects-title"
+    >
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Complete public record</p>
+          <h2 id="projects-title">Verified contributions</h2>
+        </div>
+        <p>
+          Every entry is backed by a currently reachable public commit
+          attributed by GitHub. Untouched forks and private work are excluded.
+        </p>
+      </div>
+
+      <form class="filters" data-project-filters>
+        <label class="search-field">
+          <span>Search repositories</span>
+          <input
+            type="search"
+            name="query"
+            placeholder="Search projects, languages, topics…"
+            autocomplete="off"
+          />
+        </label>
+        <label>
+          <span>Relationship</span>
+          <select name="relation">
+            <option value="all">All relationships</option>
+            <option value="owned">Original projects</option>
+            <option value="fork">Contributed forks</option>
+            <option value="external">External contributions</option>
+          </select>
+        </label>
+        <label>
+          <span>Language</span>
+          <select name="language">
+            <option value="all">All languages</option>
+            {
+              languages.map((language) => (
+                <option value={String(language).toLocaleLowerCase()}>
+                  {language}
+                </option>
+              ))
+            }
+            <option value="other">Other / data</option>
+          </select>
+        </label>
+        <button class="button button--quiet" type="reset">Clear filters</button>
+      </form>
+
+      <div class="results-summary" aria-live="polite">
+        Showing <strong data-visible-count
+          >{snapshot.repositories.length}</strong
+        > of {snapshot.repositories.length} repositories
+      </div>
+      <div class="project-grid" data-project-grid>
+        {
+          snapshot.repositories.map((repository) => (
+            <ProjectCard repository={repository} />
+          ))
+        }
+      </div>
+      <p class="empty-state" data-empty-state hidden>
+        No repositories match those filters.
+      </p>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="about__intro">
+        <p class="eyebrow">Engineering profile</p>
+        <h2 id="about-title">Built for the difficult middle</h2>
+        <p>
+          I work where high-level product needs meet low-level technical
+          constraints: legacy formats, device behavior, native code, GPU
+          pipelines, cross-platform packaging, and production safety.
+        </p>
+      </div>
+      <div class="capability-grid">
+        <article>
+          <span>01</span><h3>Applications</h3><p>
+            Cross-platform desktop tools, Qt interfaces, packaging, release
+            engineering, and workflow reliability.
+          </p>
+        </article>
+        <article>
+          <span>02</span><h3>Systems</h3><p>
+            C, C++, Rust, firmware, device integration, binary formats, and
+            hardware-aware debugging.
+          </p>
+        </article>
+        <article>
+          <span>03</span><h3>Games & media</h3><p>
+            Rendering, legacy compatibility, asset pipelines, extraction,
+            preservation, and modding tools.
+          </p>
+        </article>
+        <article>
+          <span>04</span><h3>Local AI</h3><p>
+            GPU-specific builds, inference stacks, model workflows, and
+            practical deployment on local hardware.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="methodology" aria-labelledby="methodology-title">
+      <div>
+        <p class="eyebrow">Evidence, not profile decoration</p>
+        <h2 id="methodology-title">How inclusion works</h2>
+      </div>
+      <details>
+        <summary>Read the contribution methodology</summary>
+        <div class="methodology__body">
+          <p>
+            Standalone projects are verified against current default or GitHub
+            Pages branch history. Forks are compared branch-by-branch with
+            upstream, and only unique commits resolving to <code>dev-zetta</code
+            > as primary or co-author qualify.
+          </p>
+          <p>
+            Commit OIDs are deduplicated within each repository. Counts are not
+            summed across repositories because the same commit can exist in
+            multiple repository networks.
+          </p>
+          <a
+            href="https://github.com/dev-zetta/dev-zetta.github.io/blob/main/docs/METHODOLOGY.md"
+            >Full methodology on GitHub <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>{snapshot.profile.name}</strong>
+      <span>Senior game & application developer/engineer</span>
+    </div>
+    <div class="site-footer__meta">
+      <span>Portfolio v{packageJson.version}</span>
+      <span>Data updated {updatedDate}</span>
+      <a href={snapshot.profile.profileUrl} rel="me noreferrer">GitHub</a>
+    </div>
+  </footer>
+
+  <script>
+    const themeButton = document.querySelector<HTMLButtonElement>(
+      "[data-theme-toggle]",
+    );
+    const updateThemeButton = () => {
+      if (!themeButton) return;
+      const current = document.documentElement.dataset.theme ?? "dark";
+      const next = current === "dark" ? "light" : "dark";
+      themeButton.setAttribute("aria-label", `Switch to ${next} theme`);
+      themeButton.setAttribute("aria-pressed", String(current === "dark"));
+    };
+    themeButton?.addEventListener("click", () => {
+      const next =
+        document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+      document.documentElement.dataset.theme = next;
+      try {
+        localStorage.setItem("portfolio-theme", next);
+      } catch {
+        // The selected theme still applies for this page when storage is unavailable.
+      }
+      updateThemeButton();
+    });
+    updateThemeButton();
+
+    const filterForm = document.querySelector<HTMLFormElement>(
+      "[data-project-filters]",
+    );
+    const cards = [
+      ...document.querySelectorAll<HTMLElement>(
+        "[data-project-grid] [data-project-card]",
+      ),
+    ];
+    const count = document.querySelector<HTMLElement>("[data-visible-count]");
+    const emptyState =
+      document.querySelector<HTMLElement>("[data-empty-state]");
+
+    const applyFilters = () => {
+      if (!filterForm) return;
+      const formData = new FormData(filterForm);
+      const query = String(formData.get("query") ?? "")
+        .trim()
+        .toLocaleLowerCase();
+      const relation = String(formData.get("relation") ?? "all");
+      const language = String(formData.get("language") ?? "all");
+      let visible = 0;
+
+      for (const card of cards) {
+        const matchesQuery =
+          !query || (card.dataset.search ?? "").includes(query);
+        const matchesRelation =
+          relation === "all" || card.dataset.relation === relation;
+        const matchesLanguage =
+          language === "all" || card.dataset.language === language;
+        card.hidden = !(matchesQuery && matchesRelation && matchesLanguage);
+        if (!card.hidden) visible += 1;
+      }
+
+      if (count) count.textContent = String(visible);
+      if (emptyState) emptyState.hidden = visible !== 0;
+    };
+
+    filterForm?.addEventListener("input", applyFilters);
+    filterForm?.addEventListener("change", applyFilters);
+    filterForm?.addEventListener("reset", () =>
+      requestAnimationFrame(applyFilters),
+    );
+  </script>
+</BaseLayout>

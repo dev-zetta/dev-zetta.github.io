@@ -1,0 +1,138 @@
+---
+import type { PortfolioRepository } from "../lib/portfolio-schema";
+
+interface Props {
+  repository: PortfolioRepository;
+  summary?: string;
+  contributionLabel?: string;
+  featured?: boolean;
+}
+
+const {
+  repository,
+  summary,
+  contributionLabel,
+  featured = false,
+} = Astro.props;
+const relation =
+  repository.relationship === "fork"
+    ? "Contributed fork"
+    : repository.relationship === "external"
+      ? "External contribution"
+      : "Original project";
+const formatDate = (value: string) =>
+  new Intl.DateTimeFormat("en", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+    timeZone: "UTC",
+  }).format(new Date(value));
+const searchText = [
+  repository.nameWithOwner,
+  repository.description,
+  repository.primaryLanguage,
+  ...repository.topics,
+]
+  .filter(Boolean)
+  .join(" ")
+  .toLocaleLowerCase();
+const attributionParts = [`${repository.contribution.primary} primary`];
+if (repository.contribution.coauthored) {
+  attributionParts.push(`${repository.contribution.coauthored} co-authored`);
+}
+---
+
+<article
+  class:list={["project-card", { "project-card--featured": featured }]}
+  data-project-card
+  data-search={searchText}
+  data-relation={repository.relationship}
+  data-language={(repository.primaryLanguage ?? "other").toLocaleLowerCase()}
+>
+  <div class="project-card__topline">
+    <span class={`relation relation--${repository.relationship}`}
+      >{relation}</span
+    >
+    {
+      repository.archived && (
+        <span class="relation relation--archived">Archived</span>
+      )
+    }
+  </div>
+
+  <div class="project-card__body">
+    <h3>
+      <a href={repository.url} rel="noreferrer">{repository.nameWithOwner}</a>
+    </h3>
+    <p class="project-card__summary">
+      {
+        summary ??
+          repository.description ??
+          "Public engineering work with verified commit evidence."
+      }
+    </p>
+    {
+      contributionLabel && (
+        <p class="project-card__contribution">{contributionLabel}</p>
+      )
+    }
+
+    {
+      repository.upstream && (
+        <p class="project-card__upstream">
+          Upstream{" "}
+          <a href={repository.upstream.url} rel="noreferrer">
+            {repository.upstream.nameWithOwner}
+          </a>
+        </p>
+      )
+    }
+
+    <ul class="tag-list" aria-label="Repository technologies and topics">
+      {
+        repository.primaryLanguage && (
+          <li class="tag tag--language">{repository.primaryLanguage}</li>
+        )
+      }
+      {
+        repository.topics
+          .slice(0, featured ? 5 : 3)
+          .map((topic) => <li class="tag">{topic}</li>)
+      }
+    </ul>
+  </div>
+
+  <dl class="project-card__facts">
+    <div>
+      <dt>Contribution</dt>
+      <dd>
+        {repository.contribution.total}
+        {repository.contribution.total === 1 ? "commit" : "commits"}
+      </dd>
+    </div>
+    <div>
+      <dt>Attribution</dt>
+      <dd>{attributionParts.join(" · ")}</dd>
+    </div>
+    <div>
+      <dt>Latest contribution</dt>
+      <dd>{formatDate(repository.contribution.latest.date)}</dd>
+    </div>
+    <div>
+      <dt>Repository updated</dt>
+      <dd>{formatDate(repository.updatedAt)}</dd>
+    </div>
+    <div>
+      <dt>Stars</dt>
+      <dd>{repository.stars.toLocaleString("en")}</dd>
+    </div>
+  </dl>
+
+  <a
+    class="evidence-link"
+    href={repository.contribution.latest.url}
+    rel="noreferrer"
+  >
+    View latest attributed commit <span aria-hidden="true">↗</span>
+  </a>
+</article>

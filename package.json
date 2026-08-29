@@ -1,0 +1,38 @@
+{
+  "name": "dev-zetta-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Versioned, commit-verified engineering portfolio for Gabriel Max.",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "sync:github": "tsx scripts/github-sync.ts",
+    "test": "vitest run",
+    "test:unit": "vitest run tests/unit",
+    "test:e2e": "npm run build && playwright test",
+    "verify": "npm run format:check && npm run check && npm run test:unit && npm run test:e2e"
+  },
+  "dependencies": {
+    "astro": "7.2.9",
+    "zod": "4.5.2"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.10",
+    "@axe-core/playwright": "4.13.0",
+    "@playwright/test": "1.62.1",
+    "@types/node": "24.13.3",
+    "prettier": "3.9.6",
+    "prettier-plugin-astro": "0.14.1",
+    "tsx": "4.23.12",
+    "typescript": "6.0.3",
+    "vitest": "4.1.11"
+  }
+}

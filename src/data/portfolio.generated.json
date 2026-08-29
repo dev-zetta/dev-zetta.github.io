@@ -1,0 +1,1213 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-29T11:10:31.838Z",
+  "profile": {
+    "login": "dev-zetta",
+    "name": "Gabriel Max",
+    "bio": "Senior game & app developer/engineer. Open to work. 16 years of experience",
+    "location": "Czechia",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/3283719?v=4",
+    "profileUrl": "https://github.com/dev-zetta",
+    "hireable": true,
+    "experienceYears": 16
+  },
+  "repositories": [
+    {
+      "nameWithOwner": "dev-zetta/mkv-muxing-batch-gui",
+      "name": "mkv-muxing-batch-gui",
+      "owner": "dev-zetta",
+      "url": "https://github.com/dev-zetta/mkv-muxing-batch-gui",
+      "description": "Maintained cross-platform Qt GUI for batch muxing video, audio, subtitles, chapters, and attachments with MKVToolNix.",
+      "relationship": "fork",
+      "upstream": {
+        "nameWithOwner": "yaser01/mkv-muxing-batch-gui",
+        "url": "https://github.com/yaser01/mkv-muxing-batch-gui"
+      },
+      "primaryLanguage": "Python",
+      "topics": [
+        "batch-processing",
+        "cross-platform",
+        "mkv",
+        "mkvtoolnix",
+        "muxing",
+        "pyside6",
+        "qt6",
+        "subtitles",
+        "video"
+      ],
+      "stars": 0,
+      "archived": false,
+      "updatedAt": "2026-08-29T09:08:24Z",
+      "defaultBranch": "main",
+      "contribution": {
+        "total": 10,
+        "primary": 10,
+        "coauthored": 0,
+        "latest": {
+          "oid": "85804940652f7e2ad9137b2386e1ef64d7314c49",
+          "date": "2026-08-29T09:07:54Z",
+          "url": "https://github.com/dev-zetta/mkv-muxing-batch-gui/commit/85804940652f7e2ad9137b2386e1ef64d7314c49",
+          "attribution": "primary"
+        },
+        "commits": [
+          {
+            "oid": "85804940652f7e2ad9137b2386e1ef64d7314c49",
+            "date": "2026-08-29T09:07:54Z",
+            "url": "https://github.com/dev-zetta/mkv-muxing-batch-gui/commit/85804940652f7e2ad9137b2386e1ef64d7314c49",
+            "attribution": "primary"
+          },
+          {
+            "oid": "ddb759c5d65c71b0e65c9e626852db28a414c4fd",
+            "date": "2026-08-27T23:15:32Z",
+            "url": "https://github.com/dev-zetta/mkv-muxing-batch-gui/commit/ddb759c5d65c71b0e65c9e626852db28a414c4fd",
+            "attribution": "primary"
+          },
+          {
+            "oid": "3804a6940d767fc815f1c96dd75ecc8b42e14a18",
+            "date": "2026-08-27T22:17:41Z",
+            "url": "https://github.com/dev-zetta/mkv-muxing-batch-gui/commit/3804a6940d767fc815f1c96dd75ecc8b42e14a18",
+            "attribution": "primary"
+          },
+          {
+            "oid": "081fcb8c0163bd4de3c1d438a14ac9a1fdf942fe",
+            "date": "2026-08-27T22:14:47Z",
+            "url": "https://github.com/dev-zetta/mkv-muxing-batch-gui/commit/081fcb8c0163bd4de3c1d438a14ac9a1fdf942fe",
+            "attribution": "primary"
+          },
+          {
+            "oid": "e92de5e452b617cd6e53479734f4c42a402773ba",
+            "date": "2026-08-27T21:36:05Z",
+            "url": "https://github.com/dev-zetta/mkv-muxing-batch-gui/commit/e92de5e452b617cd6e53479734f4c42a402773ba",
+            "attribution": "primary"
+          },
+          {
+            "oid": "3e187d1e17a267d4fbfbe205c956886af890fc62",
+            "date": "2026-08-27T21:29:40Z",
+            "url": "https://github.com/dev-zetta/mkv-muxing-batch-gui/commit/3e187d1e17a267d4fbfbe205c956886af890fc62",
+            "attribution": "primary"
+          },
+          {
+            "oid": "eb494eb30d76e6ceaacc8350d42cb3875192d66e",
+            "date": "2026-08-27T21:23:51Z",
+            "url": "https://github.com/dev-zetta/mkv-muxing-batch-gui/commit/eb494eb30d76e6ceaacc8350d42cb3875192d66e",
+            "attribution": "primary"
+          },
+          {
+            "oid": "5366c958f140a8f45b6711b3e9e4078709f79941",
+            "date": "2026-08-27T21:15:04Z",
+            "url": "https://github.com/dev-zetta/mkv-muxing-batch-gui/commit/5366c958f140a8f45b6711b3e9e4078709f79941",
+            "attribution": "primary"
+          },
+          {
+            "oid": "7a496737b847da43fe58d4f2cf575912e8cfe8d6",
+            "date": "2026-08-27T16:20:08Z",
+            "url": "https://github.com/dev-zetta/mkv-muxing-batch-gui/commit/7a496737b847da43fe58d4f2cf575912e8cfe8d6",
+            "attribution": "primary"
+          },
+          {
+            "oid": "a21917d2bfb2f7ce11fef22c4b4af5b459540e2a",
+            "date": "2026-08-27T16:05:56Z",
+            "url": "https://github.com/dev-zetta/mkv-muxing-batch-gui/commit/a21917d2bfb2f7ce11fef22c4b4af5b459540e2a",
+            "attribution": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "nameWithOwner": "dev-zetta/xiaomi_redmi_pad_unlocker",
+      "name": "xiaomi_redmi_pad_unlocker",
+      "owner": "dev-zetta",
+      "url": "https://github.com/dev-zetta/xiaomi_redmi_pad_unlocker",
+      "description": "Xiaomi Redmi Pad SE bootloader unlocker",
+      "relationship": "owned",
+      "upstream": null,
+      "primaryLanguage": "Python",
+      "topics": [
+        "android",
+        "flashing-utility",
+        "limit",
+        "lunaris",
+        "pad",
+        "quota",
+        "readmi",
+        "rom",
+        "tablet",
+        "unlocker",
+        "workaround",
+        "xiaomi",
+        "xiaomi-redmi"
+      ],
+      "stars": 1,
+      "archived": false,
+      "updatedAt": "2026-08-17T19:07:25Z",
+      "defaultBranch": "main",
+      "contribution": {
+        "total": 1,
+        "primary": 1,
+        "coauthored": 0,
+        "latest": {
+          "oid": "4d061b010da5d21fc0d01b0fe6689b389ccf190f",
+          "date": "2026-08-16T23:46:19Z",
+          "url": "https://github.com/dev-zetta/xiaomi_redmi_pad_unlocker/commit/4d061b010da5d21fc0d01b0fe6689b389ccf190f",
+          "attribution": "primary"
+        },
+        "commits": [
+          {
+            "oid": "4d061b010da5d21fc0d01b0fe6689b389ccf190f",
+            "date": "2026-08-16T23:46:19Z",
+            "url": "https://github.com/dev-zetta/xiaomi_redmi_pad_unlocker/commit/4d061b010da5d21fc0d01b0fe6689b389ccf190f",
+            "attribution": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "nameWithOwner": "dev-zetta/sacd_extract2",
+      "name": "sacd_extract2",
+      "owner": "dev-zetta",
+      "url": "https://github.com/dev-zetta/sacd_extract2",
+      "description": "Cross-platform SACD ISO extractor with archival DSF/DSDIFF/FLAC output, damage recovery, CUE/XML metadata, logging, and a Linux/Windows/Mac GUI.",
+      "relationship": "fork",
+      "upstream": {
+        "nameWithOwner": "EuFlo/sacd-ripper",
+        "url": "https://github.com/EuFlo/sacd-ripper"
+      },
+      "primaryLanguage": "C",
+      "topics": [
+        "appimage",
+        "audio-archiving",
+        "audio-extraction",
+        "c",
+        "cmake",
+        "cue-sheet",
+        "desktop-app",
+        "dsd",
+        "dsdiff",
+        "dsf",
+        "dst",
+        "flac",
+        "linux",
+        "macos",
+        "rust",
+        "sacd",
+        "sacd-extractor",
+        "sacd-iso",
+        "tauri",
+        "windows"
+      ],
+      "stars": 2,
+      "archived": false,
+      "updatedAt": "2026-08-18T20:44:57Z",
+      "defaultBranch": "master",
+      "contribution": {
+        "total": 23,
+        "primary": 23,
+        "coauthored": 0,
+        "latest": {
+          "oid": "3da97fbd103ffeba4452a62453e97507bc103187",
+          "date": "2026-08-13T22:50:40Z",
+          "url": "https://github.com/dev-zetta/sacd_extract2/commit/3da97fbd103ffeba4452a62453e97507bc103187",
+          "attribution": "primary"
+        },
+        "commits": [
+          {
+            "oid": "3da97fbd103ffeba4452a62453e97507bc103187",
+            "date": "2026-08-13T22:50:40Z",
+            "url": "https://github.com/dev-zetta/sacd_extract2/commit/3da97fbd103ffeba4452a62453e97507bc103187",
+            "attribution": "primary"
+          },
+          {
+            "oid": "8b94c2ac0127b8f9a507328ed57c360e13bcbd4b",
+            "date": "2026-08-13T22:48:12Z",
+            "url": "https://github.com/dev-zetta/sacd_extract2/commit/8b94c2ac0127b8f9a507328ed57c360e13bcbd4b",
+            "attribution": "primary"
+          },
+          {
+            "oid": "05dc66d9dc9e1e541928274eae99791ec7bc0d1b",
+            "date": "2026-08-13T22:34:42Z",
+            "url": "https://github.com/dev-zetta/sacd_extract2/commit/05dc66d9dc9e1e541928274eae99791ec7bc0d1b",
+            "attribution": "primary"
+          },
+          {
+            "oid": "8bcd63ac791892c3dc8547ce043bc63bd0fccab8",
+            "date": "2026-08-13T22:24:19Z",
+            "url": "https://github.com/dev-zetta/sacd_extract2/commit/8bcd63ac791892c3dc8547ce043bc63bd0fccab8",
+            "attribution": "primary"
+          },
+          {
+            "oid": "033976d4e94c67ec85470a2022dedb3e022a123a",
+            "date": "2026-08-13T22:17:26Z",
+            "url": "https://github.com/dev-zetta/sacd_extract2/commit/033976d4e94c67ec85470a2022dedb3e022a123a",
+            "attribution": "primary"
+          },
+          {
+            "oid": "05aa0dfb1935e589700d907ba86d75b081fb779b",
+            "date": "2026-08-13T22:10:23Z",
+            "url": "https://github.com/dev-zetta/sacd_extract2/commit/05aa0dfb1935e589700d907ba86d75b081fb779b",
+            "attribution": "primary"
+          },
+          {
+            "oid": "40f892dcefac2701b6ab130e2231820033a2e854",
+            "date": "2026-08-13T21:03:43Z",
+            "url": "https://github.com/dev-zetta/sacd_extract2/commit/40f892dcefac2701b6ab130e2231820033a2e854",
+            "attribution": "primary"
+          },
+          {
+            "oid": "0baebfa8869f7cad905acb1c83864cb7eef760e1",
+            "date": "2026-08-13T20:40:55Z",
+            "url": "https://github.com/dev-zetta/sacd_extract2/commit/0baebfa8869f7cad905acb1c83864cb7eef760e1",
+            "attribution": "primary"
+          },
+          {
+            "oid": "64d52def07a2fc56640cda3a5f4e1b29b6da4cd0",
+            "date": "2026-08-13T20:23:36Z",
+            "url": "https://github.com/dev-zetta/sacd_extract2/commit/64d52def07a2fc56640cda3a5f4e1b29b6da4cd0",
+            "attribution": "primary"
+          },
+          {
+            "oid": "cbd9d49e8a4a8562098c28544f8f4684e445c4a5",
+            "date": "2026-08-13T19:43:24Z",
+            "url": "https://github.com/dev-zetta/sacd_extract2/commit/cbd9d49e8a4a8562098c28544f8f4684e445c4a5",
+            "attribution": "primary"
+          },
+          {
+            "oid": "c6b4bf739ba26eb24dc1da8d837f7c29c2b6a730",
+            "date": "2026-08-13T19:31:56Z",
+            "url": "https://github.com/dev-zetta/sacd_extract2/commit/c6b4bf739ba26eb24dc1da8d837f7c29c2b6a730",
+            "attribution": "primary"
+          },
+          {
+            "oid": "732fa06de33546f92bcb94c0cf0c18d5a84ac93e",
+            "date": "2026-08-13T19:29:47Z",
+            "url": "https://github.com/dev-zetta/sacd_extract2/commit/732fa06de33546f92bcb94c0cf0c18d5a84ac93e",
+            "attribution": "primary"
+          },
+          {
+            "oid": "18e964be8a740c640cb338ccf534bfeb31554844",
+            "date": "2026-08-13T19:05:41Z",
+            "url": "https://github.com/dev-zetta/sacd_extract2/commit/18e964be8a740c640cb338ccf534bfeb31554844",
+            "attribution": "primary"
+          },
+          {
+            "oid": "c4c09e734a731c9606a27491f859ebc336608fb5",
+            "date": "2026-08-13T18:35:33Z",
+            "url": "https://github.com/dev-zetta/sacd_extract2/commit/c4c09e734a731c9606a27491f859ebc336608fb5",
+            "attribution": "primary"
+          },
+          {
+            "oid": "dc7f88f63ea5edc2c010c2355f770226b779e692",
+            "date": "2026-08-13T18:23:40Z",
+            "url": "https://github.com/dev-zetta/sacd_extract2/commit/dc7f88f63ea5edc2c010c2355f770226b779e692",
+            "attribution": "primary"
+          },
+          {
+            "oid": "2dc6d40432cf04a718b3f0bc3a01cb84a8642dab",
+            "date": "2026-08-13T18:19:38Z",
+            "url": "https://github.com/dev-zetta/sacd_extract2/commit/2dc6d40432cf04a718b3f0bc3a01cb84a8642dab",
+            "attribution": "primary"
+          },
+          {
+            "oid": "bc8b5c80fb359197ba0385e60db738c296905b25",
+            "date": "2026-08-13T16:11:20Z",
+            "url": "https://github.com/dev-zetta/sacd_extract2/commit/bc8b5c80fb359197ba0385e60db738c296905b25",
+            "attribution": "primary"
+          },
+          {
+            "oid": "d86db5081b6abc6827b3bbcf49ef601c20ec9e8a",
+            "date": "2026-08-13T16:06:52Z",
+            "url": "https://github.com/dev-zetta/sacd_extract2/commit/d86db5081b6abc6827b3bbcf49ef601c20ec9e8a",
+            "attribution": "primary"
+          },
+          {
+            "oid": "12946bcf6bfed7da57f6d3ac3c27bceda4b34552",
+            "date": "2026-08-13T14:20:35Z",
+            "url": "https://github.com/dev-zetta/sacd_extract2/commit/12946bcf6bfed7da57f6d3ac3c27bceda4b34552",
+            "attribution": "primary"
+          },
+          {
+            "oid": "4aa0e745f0b2b2f9ff3387ae8d029b64dfc0efcd",
+            "date": "2026-08-13T14:03:08Z",
+            "url": "https://github.com/dev-zetta/sacd_extract2/commit/4aa0e745f0b2b2f9ff3387ae8d029b64dfc0efcd",
+            "attribution": "primary"
+          },
+          {
+            "oid": "df7a76c95cf09cd768c18c504119a87c421f85d9",
+            "date": "2026-08-13T13:37:16Z",
+            "url": "https://github.com/dev-zetta/sacd_extract2/commit/df7a76c95cf09cd768c18c504119a87c421f85d9",
+            "attribution": "primary"
+          },
+          {
+            "oid": "fb764ebddd2a98d5f6eb5048d3c838824f192a67",
+            "date": "2026-08-13T11:57:21Z",
+            "url": "https://github.com/dev-zetta/sacd_extract2/commit/fb764ebddd2a98d5f6eb5048d3c838824f192a67",
+            "attribution": "primary"
+          },
+          {
+            "oid": "eae970776f570e4d6113757d9cab1d1e7c21247e",
+            "date": "2026-08-13T11:48:14Z",
+            "url": "https://github.com/dev-zetta/sacd_extract2/commit/eae970776f570e4d6113757d9cab1d1e7c21247e",
+            "attribution": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "nameWithOwner": "dev-zetta/PicoGhostHID",
+      "name": "PicoGhostHID",
+      "owner": "dev-zetta",
+      "url": "https://github.com/dev-zetta/PicoGhostHID",
+      "description": "Native Raspberry Pi Pico USB HID keyboard/mouse jiggler firmware using TinyUSB, with Pico 1/2 builds, natural mouse movement, randomized keyboard actions, schedule config and BOOTSEL pause.",
+      "relationship": "owned",
+      "upstream": null,
+      "primaryLanguage": "C",
+      "topics": [
+        "cmake",
+        "firmware",
+        "hid",
+        "keyboard",
+        "mouse",
+        "mouse-jiggler",
+        "pico-sdk",
+        "pico2",
+        "raspberry-pi-pico",
+        "rp2040",
+        "rp2350",
+        "tinyusb",
+        "uf2",
+        "usb-hid"
+      ],
+      "stars": 2,
+      "archived": false,
+      "updatedAt": "2026-07-10T13:14:54Z",
+      "defaultBranch": "main",
+      "contribution": {
+        "total": 16,
+        "primary": 16,
+        "coauthored": 0,
+        "latest": {
+          "oid": "395cdf861a878c4611448a6bc7ac6b9e270003ed",
+          "date": "2026-07-10T13:13:35Z",
+          "url": "https://github.com/dev-zetta/PicoGhostHID/commit/395cdf861a878c4611448a6bc7ac6b9e270003ed",
+          "attribution": "primary"
+        },
+        "commits": [
+          {
+            "oid": "395cdf861a878c4611448a6bc7ac6b9e270003ed",
+            "date": "2026-07-10T13:13:35Z",
+            "url": "https://github.com/dev-zetta/PicoGhostHID/commit/395cdf861a878c4611448a6bc7ac6b9e270003ed",
+            "attribution": "primary"
+          },
+          {
+            "oid": "a6341c28c049c3597ac386ccc9010c8a6b43dda8",
+            "date": "2026-07-09T10:17:42Z",
+            "url": "https://github.com/dev-zetta/PicoGhostHID/commit/a6341c28c049c3597ac386ccc9010c8a6b43dda8",
+            "attribution": "primary"
+          },
+          {
+            "oid": "3a16a5d96401558907e2d2b85d0f68089891afaa",
+            "date": "2026-07-09T10:06:23Z",
+            "url": "https://github.com/dev-zetta/PicoGhostHID/commit/3a16a5d96401558907e2d2b85d0f68089891afaa",
+            "attribution": "primary"
+          },
+          {
+            "oid": "8e776a2a2d9a3f4c7bc97db79b36dfcdd6677a8c",
+            "date": "2026-07-08T21:11:59Z",
+            "url": "https://github.com/dev-zetta/PicoGhostHID/commit/8e776a2a2d9a3f4c7bc97db79b36dfcdd6677a8c",
+            "attribution": "primary"
+          },
+          {
+            "oid": "e164c9d86f37e3f6340897b3632ea3f9de08e8bc",
+            "date": "2026-07-08T21:01:52Z",
+            "url": "https://github.com/dev-zetta/PicoGhostHID/commit/e164c9d86f37e3f6340897b3632ea3f9de08e8bc",
+            "attribution": "primary"
+          },
+          {
+            "oid": "9649ae72ef3e468e7201a43780df4a2399a4e69e",
+            "date": "2026-07-08T20:49:32Z",
+            "url": "https://github.com/dev-zetta/PicoGhostHID/commit/9649ae72ef3e468e7201a43780df4a2399a4e69e",
+            "attribution": "primary"
+          },
+          {
+            "oid": "7e345e6ee19e20e55c650f5dc20d727cfcb90a6e",
+            "date": "2026-07-08T20:43:10Z",
+            "url": "https://github.com/dev-zetta/PicoGhostHID/commit/7e345e6ee19e20e55c650f5dc20d727cfcb90a6e",
+            "attribution": "primary"
+          },
+          {
+            "oid": "02c398c125e0abbd4ef1e9239a124867476aba74",
+            "date": "2026-07-08T20:34:57Z",
+            "url": "https://github.com/dev-zetta/PicoGhostHID/commit/02c398c125e0abbd4ef1e9239a124867476aba74",
+            "attribution": "primary"
+          },
+          {
+            "oid": "66a93117e877c531001eb14a2157e2e6abc76ef2",
+            "date": "2026-07-08T20:27:52Z",
+            "url": "https://github.com/dev-zetta/PicoGhostHID/commit/66a93117e877c531001eb14a2157e2e6abc76ef2",
+            "attribution": "primary"
+          },
+          {
+            "oid": "42cb54bfdd8bd3f8d2ddf2936d10ad60cff83d60",
+            "date": "2026-07-08T20:24:39Z",
+            "url": "https://github.com/dev-zetta/PicoGhostHID/commit/42cb54bfdd8bd3f8d2ddf2936d10ad60cff83d60",
+            "attribution": "primary"
+          },
+          {
+            "oid": "734c65a66915109e6d223604830ccd2935a73872",
+            "date": "2026-07-08T20:23:11Z",
+            "url": "https://github.com/dev-zetta/PicoGhostHID/commit/734c65a66915109e6d223604830ccd2935a73872",
+            "attribution": "primary"
+          },
+          {
+            "oid": "4b6fce4f2b70c28acc2de85cd31e6fb6b09082f2",
+            "date": "2026-07-08T20:13:07Z",
+            "url": "https://github.com/dev-zetta/PicoGhostHID/commit/4b6fce4f2b70c28acc2de85cd31e6fb6b09082f2",
+            "attribution": "primary"
+          },
+          {
+            "oid": "1bb8a5585747c62d83642e64b63b1c2103e280ee",
+            "date": "2026-07-08T20:10:50Z",
+            "url": "https://github.com/dev-zetta/PicoGhostHID/commit/1bb8a5585747c62d83642e64b63b1c2103e280ee",
+            "attribution": "primary"
+          },
+          {
+            "oid": "e35fff5da11e1100832d50bd1ec3c6f745aef66a",
+            "date": "2026-07-08T20:07:44Z",
+            "url": "https://github.com/dev-zetta/PicoGhostHID/commit/e35fff5da11e1100832d50bd1ec3c6f745aef66a",
+            "attribution": "primary"
+          },
+          {
+            "oid": "33263002b184a4b73efbbd7617c0c2a8c78ee281",
+            "date": "2026-07-08T19:59:14Z",
+            "url": "https://github.com/dev-zetta/PicoGhostHID/commit/33263002b184a4b73efbbd7617c0c2a8c78ee281",
+            "attribution": "primary"
+          },
+          {
+            "oid": "0bb987468221ddc81f3dc5ab0d8067397047f609",
+            "date": "2026-07-08T19:57:34Z",
+            "url": "https://github.com/dev-zetta/PicoGhostHID/commit/0bb987468221ddc81f3dc5ab0d8067397047f609",
+            "attribution": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "nameWithOwner": "zetta-app/llama.cpp_turboquant",
+      "name": "llama.cpp_turboquant",
+      "owner": "zetta-app",
+      "url": "https://github.com/zetta-app/llama.cpp_turboquant",
+      "description": "LLM inference with 7x KV cache compression. Combines llama.cpp (production inference engine) with TurboQuant (KV quantization). Run 131K token context on 16GB VRAM. OpenAI-compatible API server. Supports 100+ model architectures.",
+      "relationship": "external",
+      "upstream": null,
+      "primaryLanguage": "Shell",
+      "topics": [
+        "cuda",
+        "deep-learning",
+        "gpu",
+        "inference",
+        "kv-cache",
+        "language-model",
+        "llama-cpp",
+        "llm",
+        "local-ai",
+        "machine-learning",
+        "memory-compression",
+        "neural-networks",
+        "openai-api",
+        "quantization",
+        "turboquant"
+      ],
+      "stars": 0,
+      "archived": false,
+      "updatedAt": "2026-04-09T16:37:34Z",
+      "defaultBranch": "master",
+      "contribution": {
+        "total": 2,
+        "primary": 2,
+        "coauthored": 0,
+        "latest": {
+          "oid": "ad5285badd6a33cb260fbe65a356507e51bf6a67",
+          "date": "2026-04-09T16:36:25Z",
+          "url": "https://github.com/zetta-app/llama.cpp_turboquant/commit/ad5285badd6a33cb260fbe65a356507e51bf6a67",
+          "attribution": "primary"
+        },
+        "commits": [
+          {
+            "oid": "ad5285badd6a33cb260fbe65a356507e51bf6a67",
+            "date": "2026-04-09T16:36:25Z",
+            "url": "https://github.com/zetta-app/llama.cpp_turboquant/commit/ad5285badd6a33cb260fbe65a356507e51bf6a67",
+            "attribution": "primary"
+          },
+          {
+            "oid": "2bedddf1f45b1364aac16a41b4b0b2f54313fd91",
+            "date": "2026-04-09T15:40:18Z",
+            "url": "https://github.com/zetta-app/llama.cpp_turboquant/commit/2bedddf1f45b1364aac16a41b4b0b2f54313fd91",
+            "attribution": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "nameWithOwner": "dev-zetta/aoostar-rs",
+      "name": "aoostar-rs",
+      "owner": "dev-zetta",
+      "url": "https://github.com/dev-zetta/aoostar-rs",
+      "description": "Open screen control for AOOSTAR WTR MAX and GEM12+ PRO",
+      "relationship": "fork",
+      "upstream": {
+        "nameWithOwner": "zehnm/aoostar-rs",
+        "url": "https://github.com/zehnm/aoostar-rs"
+      },
+      "primaryLanguage": "Rust",
+      "topics": [
+        "aoostart",
+        "control",
+        "lcd",
+        "nas",
+        "proxmox-ve",
+        "wrt-max"
+      ],
+      "stars": 7,
+      "archived": false,
+      "updatedAt": "2026-06-29T14:47:59Z",
+      "defaultBranch": "main",
+      "contribution": {
+        "total": 25,
+        "primary": 25,
+        "coauthored": 0,
+        "latest": {
+          "oid": "62c4b673bd9f3aeefdfeebfa94c501944402edfe",
+          "date": "2026-02-12T23:00:53Z",
+          "url": "https://github.com/dev-zetta/aoostar-rs/commit/62c4b673bd9f3aeefdfeebfa94c501944402edfe",
+          "attribution": "primary"
+        },
+        "commits": [
+          {
+            "oid": "62c4b673bd9f3aeefdfeebfa94c501944402edfe",
+            "date": "2026-02-12T23:00:53Z",
+            "url": "https://github.com/dev-zetta/aoostar-rs/commit/62c4b673bd9f3aeefdfeebfa94c501944402edfe",
+            "attribution": "primary"
+          },
+          {
+            "oid": "64ae33a65af6f5dd5ae9799aa1aff4de57de7dc9",
+            "date": "2026-02-12T22:38:28Z",
+            "url": "https://github.com/dev-zetta/aoostar-rs/commit/64ae33a65af6f5dd5ae9799aa1aff4de57de7dc9",
+            "attribution": "primary"
+          },
+          {
+            "oid": "e0ef8dcb08c9f8029a5a9a585837abffd5a06cbb",
+            "date": "2026-02-12T22:36:16Z",
+            "url": "https://github.com/dev-zetta/aoostar-rs/commit/e0ef8dcb08c9f8029a5a9a585837abffd5a06cbb",
+            "attribution": "primary"
+          },
+          {
+            "oid": "b3a3085fdfc9a48460473696e81e48315d0db7a6",
+            "date": "2026-02-12T22:26:43Z",
+            "url": "https://github.com/dev-zetta/aoostar-rs/commit/b3a3085fdfc9a48460473696e81e48315d0db7a6",
+            "attribution": "primary"
+          },
+          {
+            "oid": "a762713fc65b5152cc2405d5897ea45217940f47",
+            "date": "2026-02-12T22:11:48Z",
+            "url": "https://github.com/dev-zetta/aoostar-rs/commit/a762713fc65b5152cc2405d5897ea45217940f47",
+            "attribution": "primary"
+          },
+          {
+            "oid": "a79736318273ea3a433ec5c0d6779a1ff2e90f8e",
+            "date": "2026-02-12T22:05:10Z",
+            "url": "https://github.com/dev-zetta/aoostar-rs/commit/a79736318273ea3a433ec5c0d6779a1ff2e90f8e",
+            "attribution": "primary"
+          },
+          {
+            "oid": "c00bd7ac12082ee9e43a833f9f9f39773066f6a1",
+            "date": "2026-02-12T21:58:06Z",
+            "url": "https://github.com/dev-zetta/aoostar-rs/commit/c00bd7ac12082ee9e43a833f9f9f39773066f6a1",
+            "attribution": "primary"
+          },
+          {
+            "oid": "4555368623cef0d8bb9f1e7c22fe19c89c162e5a",
+            "date": "2026-02-12T21:53:47Z",
+            "url": "https://github.com/dev-zetta/aoostar-rs/commit/4555368623cef0d8bb9f1e7c22fe19c89c162e5a",
+            "attribution": "primary"
+          },
+          {
+            "oid": "473ddd7c45455bb0cc3e009c475ca463879a6ff8",
+            "date": "2026-02-12T21:41:24Z",
+            "url": "https://github.com/dev-zetta/aoostar-rs/commit/473ddd7c45455bb0cc3e009c475ca463879a6ff8",
+            "attribution": "primary"
+          },
+          {
+            "oid": "d1f9a251addd8f82781e7406134d2cdbb0adc247",
+            "date": "2026-02-12T21:32:19Z",
+            "url": "https://github.com/dev-zetta/aoostar-rs/commit/d1f9a251addd8f82781e7406134d2cdbb0adc247",
+            "attribution": "primary"
+          },
+          {
+            "oid": "97e6b241419e8ac29d6f041f91b535a00127fd35",
+            "date": "2026-02-12T21:25:29Z",
+            "url": "https://github.com/dev-zetta/aoostar-rs/commit/97e6b241419e8ac29d6f041f91b535a00127fd35",
+            "attribution": "primary"
+          },
+          {
+            "oid": "04065c2bd9a6f8ab25d83284abf9ba55974419bd",
+            "date": "2026-02-12T20:52:33Z",
+            "url": "https://github.com/dev-zetta/aoostar-rs/commit/04065c2bd9a6f8ab25d83284abf9ba55974419bd",
+            "attribution": "primary"
+          },
+          {
+            "oid": "415e05cb5a26036a7bb925bb4017a3e15db3063f",
+            "date": "2026-02-12T20:47:28Z",
+            "url": "https://github.com/dev-zetta/aoostar-rs/commit/415e05cb5a26036a7bb925bb4017a3e15db3063f",
+            "attribution": "primary"
+          },
+          {
+            "oid": "66863bd9e38938b30302a7b64d8a2a61373388c7",
+            "date": "2026-02-12T20:37:48Z",
+            "url": "https://github.com/dev-zetta/aoostar-rs/commit/66863bd9e38938b30302a7b64d8a2a61373388c7",
+            "attribution": "primary"
+          },
+          {
+            "oid": "50124277d7e4a7e5398d74037beb455d24cb55b4",
+            "date": "2026-02-12T20:36:40Z",
+            "url": "https://github.com/dev-zetta/aoostar-rs/commit/50124277d7e4a7e5398d74037beb455d24cb55b4",
+            "attribution": "primary"
+          },
+          {
+            "oid": "119bdd324b8b28001f4792778866b496c44a1275",
+            "date": "2026-02-12T20:18:35Z",
+            "url": "https://github.com/dev-zetta/aoostar-rs/commit/119bdd324b8b28001f4792778866b496c44a1275",
+            "attribution": "primary"
+          },
+          {
+            "oid": "ac16b5287942f213ea41d35dab3c490eb187ecb9",
+            "date": "2026-02-12T20:05:27Z",
+            "url": "https://github.com/dev-zetta/aoostar-rs/commit/ac16b5287942f213ea41d35dab3c490eb187ecb9",
+            "attribution": "primary"
+          },
+          {
+            "oid": "1b7acf9bf54f106fffa97131e37ce19d332cd2b9",
+            "date": "2026-02-12T20:05:06Z",
+            "url": "https://github.com/dev-zetta/aoostar-rs/commit/1b7acf9bf54f106fffa97131e37ce19d332cd2b9",
+            "attribution": "primary"
+          },
+          {
+            "oid": "adc302db3c40ca46ce2b9d57e2573388f7ca09b2",
+            "date": "2026-02-12T19:48:06Z",
+            "url": "https://github.com/dev-zetta/aoostar-rs/commit/adc302db3c40ca46ce2b9d57e2573388f7ca09b2",
+            "attribution": "primary"
+          },
+          {
+            "oid": "96e50c0b12ff439a57f403429de0b92be28059d2",
+            "date": "2026-02-12T19:38:24Z",
+            "url": "https://github.com/dev-zetta/aoostar-rs/commit/96e50c0b12ff439a57f403429de0b92be28059d2",
+            "attribution": "primary"
+          },
+          {
+            "oid": "c1f58538ea73eb006cddc16f51570dd15a0b2ba5",
+            "date": "2026-02-12T19:36:39Z",
+            "url": "https://github.com/dev-zetta/aoostar-rs/commit/c1f58538ea73eb006cddc16f51570dd15a0b2ba5",
+            "attribution": "primary"
+          },
+          {
+            "oid": "ac22e4b113859ed1f0c5621051869367856f4042",
+            "date": "2026-02-12T19:23:00Z",
+            "url": "https://github.com/dev-zetta/aoostar-rs/commit/ac22e4b113859ed1f0c5621051869367856f4042",
+            "attribution": "primary"
+          },
+          {
+            "oid": "3e4930f0e0595c64e9b0689b94d610814a8af760",
+            "date": "2026-02-12T18:24:05Z",
+            "url": "https://github.com/dev-zetta/aoostar-rs/commit/3e4930f0e0595c64e9b0689b94d610814a8af760",
+            "attribution": "primary"
+          },
+          {
+            "oid": "77f96d4db0aeadbdaa6df0a3fdf9a3502c120d29",
+            "date": "2026-02-12T18:24:05Z",
+            "url": "https://github.com/dev-zetta/aoostar-rs/commit/77f96d4db0aeadbdaa6df0a3fdf9a3502c120d29",
+            "attribution": "primary"
+          },
+          {
+            "oid": "05a501e692df29259107549c9f42ef165edf0f74",
+            "date": "2026-01-11T16:57:33Z",
+            "url": "https://github.com/dev-zetta/aoostar-rs/commit/05a501e692df29259107549c9f42ef165edf0f74",
+            "attribution": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "nameWithOwner": "dev-zetta/ddraw_emu",
+      "name": "ddraw_emu",
+      "owner": "dev-zetta",
+      "url": "https://github.com/dev-zetta/ddraw_emu",
+      "description": "A DirectDraw API compatibility layer that enables legacy games from the 1990s-2000s to run on modern Windows systems by translating DirectDraw 7 calls to modern rendering backends (OpenGL or Direct3D 9).",
+      "relationship": "owned",
+      "upstream": null,
+      "primaryLanguage": "C++",
+      "topics": [
+        "directdraw",
+        "game",
+        "opengl",
+        "wrapper-library"
+      ],
+      "stars": 3,
+      "archived": false,
+      "updatedAt": "2026-07-03T20:10:29Z",
+      "defaultBranch": "master",
+      "contribution": {
+        "total": 1,
+        "primary": 1,
+        "coauthored": 0,
+        "latest": {
+          "oid": "666f19f19c0c81f3ff1f3d87bdf801244a51344f",
+          "date": "2026-01-06T00:24:34Z",
+          "url": "https://github.com/dev-zetta/ddraw_emu/commit/666f19f19c0c81f3ff1f3d87bdf801244a51344f",
+          "attribution": "primary"
+        },
+        "commits": [
+          {
+            "oid": "666f19f19c0c81f3ff1f3d87bdf801244a51344f",
+            "date": "2026-01-06T00:24:34Z",
+            "url": "https://github.com/dev-zetta/ddraw_emu/commit/666f19f19c0c81f3ff1f3d87bdf801244a51344f",
+            "attribution": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "nameWithOwner": "dev-zetta/BikMod",
+      "name": "BikMod",
+      "owner": "dev-zetta",
+      "url": "https://github.com/dev-zetta/BikMod",
+      "description": "A Windows DLL interceptor for the Bink video codec that adds subtitle support, enhanced logging, and frame-by-frame playback control.",
+      "relationship": "owned",
+      "upstream": null,
+      "primaryLanguage": "C++",
+      "topics": [
+        "bink",
+        "bink-video",
+        "game",
+        "wrapper-library"
+      ],
+      "stars": 1,
+      "archived": false,
+      "updatedAt": "2026-03-14T11:52:31Z",
+      "defaultBranch": "master",
+      "contribution": {
+        "total": 1,
+        "primary": 1,
+        "coauthored": 0,
+        "latest": {
+          "oid": "eb957555eb849f5a3247bb91475b477a6f1b1fdf",
+          "date": "2026-01-05T23:59:14Z",
+          "url": "https://github.com/dev-zetta/BikMod/commit/eb957555eb849f5a3247bb91475b477a6f1b1fdf",
+          "attribution": "primary"
+        },
+        "commits": [
+          {
+            "oid": "eb957555eb849f5a3247bb91475b477a6f1b1fdf",
+            "date": "2026-01-05T23:59:14Z",
+            "url": "https://github.com/dev-zetta/BikMod/commit/eb957555eb849f5a3247bb91475b477a6f1b1fdf",
+            "attribution": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "nameWithOwner": "dev-zetta/GameModdingStudio",
+      "name": "GameModdingStudio",
+      "owner": "dev-zetta",
+      "url": "https://github.com/dev-zetta/GameModdingStudio",
+      "description": "A utility suite for ripping, inspecting and converting game assets — released after 14 years in private development.",
+      "relationship": "owned",
+      "upstream": null,
+      "primaryLanguage": "Pascal",
+      "topics": [
+        "game",
+        "game-development",
+        "modding-tools"
+      ],
+      "stars": 1,
+      "archived": false,
+      "updatedAt": "2026-05-09T18:23:48Z",
+      "defaultBranch": "main",
+      "contribution": {
+        "total": 2,
+        "primary": 2,
+        "coauthored": 0,
+        "latest": {
+          "oid": "62d633c5663e2d899be77e99deafdfb70f369013",
+          "date": "2026-01-05T23:14:17Z",
+          "url": "https://github.com/dev-zetta/GameModdingStudio/commit/62d633c5663e2d899be77e99deafdfb70f369013",
+          "attribution": "primary"
+        },
+        "commits": [
+          {
+            "oid": "62d633c5663e2d899be77e99deafdfb70f369013",
+            "date": "2026-01-05T23:14:17Z",
+            "url": "https://github.com/dev-zetta/GameModdingStudio/commit/62d633c5663e2d899be77e99deafdfb70f369013",
+            "attribution": "primary"
+          },
+          {
+            "oid": "5fccf0d4b4550fd126a6e343df04a597935c1515",
+            "date": "2026-01-05T22:17:28Z",
+            "url": "https://github.com/dev-zetta/GameModdingStudio/commit/5fccf0d4b4550fd126a6e343df04a597935c1515",
+            "attribution": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "nameWithOwner": "dev-zetta/monster_punch",
+      "name": "monster_punch",
+      "owner": "dev-zetta",
+      "url": "https://github.com/dev-zetta/monster_punch",
+      "description": null,
+      "relationship": "owned",
+      "upstream": null,
+      "primaryLanguage": "Lua",
+      "topics": [],
+      "stars": 0,
+      "archived": false,
+      "updatedAt": "2024-02-19T22:38:45Z",
+      "defaultBranch": "master",
+      "contribution": {
+        "total": 3,
+        "primary": 3,
+        "coauthored": 0,
+        "latest": {
+          "oid": "5fa70c8657a8d961f221c964483933941454878c",
+          "date": "2024-02-19T22:41:40Z",
+          "url": "https://github.com/dev-zetta/monster_punch/commit/5fa70c8657a8d961f221c964483933941454878c",
+          "attribution": "primary"
+        },
+        "commits": [
+          {
+            "oid": "5fa70c8657a8d961f221c964483933941454878c",
+            "date": "2024-02-19T22:41:40Z",
+            "url": "https://github.com/dev-zetta/monster_punch/commit/5fa70c8657a8d961f221c964483933941454878c",
+            "attribution": "primary"
+          },
+          {
+            "oid": "d79f11e4788dc822642cf5ddb95fd3791ea052d6",
+            "date": "2024-02-19T22:38:41Z",
+            "url": "https://github.com/dev-zetta/monster_punch/commit/d79f11e4788dc822642cf5ddb95fd3791ea052d6",
+            "attribution": "primary"
+          },
+          {
+            "oid": "72497130ab71f030cb073fc7aa729d59b14c4f0b",
+            "date": "2023-11-29T09:40:29Z",
+            "url": "https://github.com/dev-zetta/monster_punch/commit/72497130ab71f030cb073fc7aa729d59b14c4f0b",
+            "attribution": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "nameWithOwner": "dev-zetta/scs_task",
+      "name": "scs_task",
+      "owner": "dev-zetta",
+      "url": "https://github.com/dev-zetta/scs_task",
+      "description": null,
+      "relationship": "owned",
+      "upstream": null,
+      "primaryLanguage": "C++",
+      "topics": [],
+      "stars": 0,
+      "archived": false,
+      "updatedAt": "2024-02-19T14:04:19Z",
+      "defaultBranch": "master",
+      "contribution": {
+        "total": 2,
+        "primary": 2,
+        "coauthored": 0,
+        "latest": {
+          "oid": "c21c9f87e895479ff3f0f210f151cd8f9828aa08",
+          "date": "2024-02-19T17:12:32Z",
+          "url": "https://github.com/dev-zetta/scs_task/commit/c21c9f87e895479ff3f0f210f151cd8f9828aa08",
+          "attribution": "primary"
+        },
+        "commits": [
+          {
+            "oid": "c21c9f87e895479ff3f0f210f151cd8f9828aa08",
+            "date": "2024-02-19T17:12:32Z",
+            "url": "https://github.com/dev-zetta/scs_task/commit/c21c9f87e895479ff3f0f210f151cd8f9828aa08",
+            "attribution": "primary"
+          },
+          {
+            "oid": "765faad8b5eea9763b0f2510756cd1a7fe93428d",
+            "date": "2024-02-14T06:47:00Z",
+            "url": "https://github.com/dev-zetta/scs_task/commit/765faad8b5eea9763b0f2510756cd1a7fe93428d",
+            "attribution": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "nameWithOwner": "dev-zetta/karta_task",
+      "name": "karta_task",
+      "owner": "dev-zetta",
+      "url": "https://github.com/dev-zetta/karta_task",
+      "description": null,
+      "relationship": "owned",
+      "upstream": null,
+      "primaryLanguage": "Lua",
+      "topics": [],
+      "stars": 0,
+      "archived": false,
+      "updatedAt": "2024-02-19T21:59:22Z",
+      "defaultBranch": "master",
+      "contribution": {
+        "total": 2,
+        "primary": 2,
+        "coauthored": 0,
+        "latest": {
+          "oid": "748f0ca901e0c6440ba3fd6c85aa6652b248ad02",
+          "date": "2024-01-19T23:08:52Z",
+          "url": "https://github.com/dev-zetta/karta_task/commit/748f0ca901e0c6440ba3fd6c85aa6652b248ad02",
+          "attribution": "primary"
+        },
+        "commits": [
+          {
+            "oid": "748f0ca901e0c6440ba3fd6c85aa6652b248ad02",
+            "date": "2024-01-19T23:08:52Z",
+            "url": "https://github.com/dev-zetta/karta_task/commit/748f0ca901e0c6440ba3fd6c85aa6652b248ad02",
+            "attribution": "primary"
+          },
+          {
+            "oid": "67a44181d43e98e194a3cac36d583c4b32b67c29",
+            "date": "2024-01-19T23:02:25Z",
+            "url": "https://github.com/dev-zetta/karta_task/commit/67a44181d43e98e194a3cac36d583c4b32b67c29",
+            "attribution": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "nameWithOwner": "dev-zetta/developer-journey-app",
+      "name": "developer-journey-app",
+      "owner": "dev-zetta",
+      "url": "https://github.com/dev-zetta/developer-journey-app",
+      "description": "Developer Journey App is a gaming sample app, built with Cloud Run, Cloud Storage, Cloud Firestore, and Cloud Build.",
+      "relationship": "fork",
+      "upstream": {
+        "nameWithOwner": "GoogleCloudPlatform/developer-journey-app",
+        "url": "https://github.com/GoogleCloudPlatform/developer-journey-app"
+      },
+      "primaryLanguage": "TypeScript",
+      "topics": [],
+      "stars": 0,
+      "archived": false,
+      "updatedAt": "2023-10-08T14:36:50Z",
+      "defaultBranch": "main",
+      "contribution": {
+        "total": 5,
+        "primary": 5,
+        "coauthored": 0,
+        "latest": {
+          "oid": "57d580e8331588caab153443449a18461acf13b6",
+          "date": "2023-10-09T07:55:56Z",
+          "url": "https://github.com/dev-zetta/developer-journey-app/commit/57d580e8331588caab153443449a18461acf13b6",
+          "attribution": "primary"
+        },
+        "commits": [
+          {
+            "oid": "57d580e8331588caab153443449a18461acf13b6",
+            "date": "2023-10-09T07:55:56Z",
+            "url": "https://github.com/dev-zetta/developer-journey-app/commit/57d580e8331588caab153443449a18461acf13b6",
+            "attribution": "primary"
+          },
+          {
+            "oid": "fe9a4a972e09cc5c9d5194e139840fcadd5e7b27",
+            "date": "2023-10-09T07:53:12Z",
+            "url": "https://github.com/dev-zetta/developer-journey-app/commit/fe9a4a972e09cc5c9d5194e139840fcadd5e7b27",
+            "attribution": "primary"
+          },
+          {
+            "oid": "1b8a6f9753e8a84f739fc5c63c60f262997cd3eb",
+            "date": "2023-10-09T06:52:27Z",
+            "url": "https://github.com/dev-zetta/developer-journey-app/commit/1b8a6f9753e8a84f739fc5c63c60f262997cd3eb",
+            "attribution": "primary"
+          },
+          {
+            "oid": "23f861c684239b48d1c280b4a418326f8c9f47c7",
+            "date": "2023-10-09T06:47:25Z",
+            "url": "https://github.com/dev-zetta/developer-journey-app/commit/23f861c684239b48d1c280b4a418326f8c9f47c7",
+            "attribution": "primary"
+          },
+          {
+            "oid": "3e2d5112c4ba19d266d8cc4f53b133a59bf1e781",
+            "date": "2023-10-08T14:36:44Z",
+            "url": "https://github.com/dev-zetta/developer-journey-app/commit/3e2d5112c4ba19d266d8cc4f53b133a59bf1e781",
+            "attribution": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "nameWithOwner": "clee/VoronBFI",
+      "name": "VoronBFI",
+      "owner": "clee",
+      "url": "https://github.com/clee/VoronBFI",
+      "description": "Beefy Front Idlers (for Vorons)",
+      "relationship": "external",
+      "upstream": null,
+      "primaryLanguage": null,
+      "topics": [
+        "voron"
+      ],
+      "stars": 555,
+      "archived": false,
+      "updatedAt": "2026-08-26T21:46:47Z",
+      "defaultBranch": "main",
+      "contribution": {
+        "total": 1,
+        "primary": 1,
+        "coauthored": 0,
+        "latest": {
+          "oid": "efd30bd44f64cc05861944e43f97cff9361b6fb6",
+          "date": "2023-08-22T07:26:15Z",
+          "url": "https://github.com/clee/VoronBFI/commit/efd30bd44f64cc05861944e43f97cff9361b6fb6",
+          "attribution": "primary"
+        },
+        "commits": [
+          {
+            "oid": "efd30bd44f64cc05861944e43f97cff9361b6fb6",
+            "date": "2023-08-22T07:26:15Z",
+            "url": "https://github.com/clee/VoronBFI/commit/efd30bd44f64cc05861944e43f97cff9361b6fb6",
+            "attribution": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "nameWithOwner": "andrewmcgr/klipper_tmc_autotune",
+      "name": "klipper_tmc_autotune",
+      "owner": "andrewmcgr",
+      "url": "https://github.com/andrewmcgr/klipper_tmc_autotune",
+      "description": "TMC stepper driver autotuning Klipper python extra",
+      "relationship": "external",
+      "upstream": null,
+      "primaryLanguage": "Python",
+      "topics": [],
+      "stars": 1042,
+      "archived": false,
+      "updatedAt": "2026-08-28T13:04:53Z",
+      "defaultBranch": "main",
+      "contribution": {
+        "total": 4,
+        "primary": 4,
+        "coauthored": 0,
+        "latest": {
+          "oid": "4763b966208b8d18a94ebc31613fa8f1861db8f4",
+          "date": "2023-07-11T23:24:06Z",
+          "url": "https://github.com/andrewmcgr/klipper_tmc_autotune/commit/4763b966208b8d18a94ebc31613fa8f1861db8f4",
+          "attribution": "primary"
+        },
+        "commits": [
+          {
+            "oid": "4763b966208b8d18a94ebc31613fa8f1861db8f4",
+            "date": "2023-07-11T23:24:06Z",
+            "url": "https://github.com/andrewmcgr/klipper_tmc_autotune/commit/4763b966208b8d18a94ebc31613fa8f1861db8f4",
+            "attribution": "primary"
+          },
+          {
+            "oid": "b6af85982c1adcad748c3d7b861e3431e5403da7",
+            "date": "2023-07-06T06:44:50Z",
+            "url": "https://github.com/andrewmcgr/klipper_tmc_autotune/commit/b6af85982c1adcad748c3d7b861e3431e5403da7",
+            "attribution": "primary"
+          },
+          {
+            "oid": "8c9957d4da799ab513fd387b76f43e2075630bea",
+            "date": "2023-07-05T21:12:17Z",
+            "url": "https://github.com/andrewmcgr/klipper_tmc_autotune/commit/8c9957d4da799ab513fd387b76f43e2075630bea",
+            "attribution": "primary"
+          },
+          {
+            "oid": "bd06a11b7f7453c8ae5477f89f946d14a31b5112",
+            "date": "2023-07-05T21:05:38Z",
+            "url": "https://github.com/andrewmcgr/klipper_tmc_autotune/commit/bd06a11b7f7453c8ae5477f89f946d14a31b5112",
+            "attribution": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "nameWithOwner": "Flyer53/jsPanel4",
+      "name": "jsPanel4",
+      "owner": "Flyer53",
+      "url": "https://github.com/Flyer53/jsPanel4",
+      "description": "A JavaScript library to create highly configurable floating panels, modals, tooltips, hints/notifiers/alerts or contextmenus for use in backend solutions and other web applications.",
+      "relationship": "external",
+      "upstream": null,
+      "primaryLanguage": "JavaScript",
+      "topics": [
+        "alert",
+        "contextmenu",
+        "dialog",
+        "draggable",
+        "hint",
+        "javascript",
+        "modal",
+        "notifier",
+        "panel",
+        "resizable",
+        "tooltip",
+        "ui",
+        "window"
+      ],
+      "stars": 326,
+      "archived": false,
+      "updatedAt": "2026-07-23T10:49:16Z",
+      "defaultBranch": "master",
+      "contribution": {
+        "total": 6,
+        "primary": 6,
+        "coauthored": 0,
+        "latest": {
+          "oid": "03fea98c61cd21b5c0afe7fcba938149eae45d06",
+          "date": "2018-11-29T11:14:10Z",
+          "url": "https://github.com/Flyer53/jsPanel4/commit/03fea98c61cd21b5c0afe7fcba938149eae45d06",
+          "attribution": "primary"
+        },
+        "commits": [
+          {
+            "oid": "03fea98c61cd21b5c0afe7fcba938149eae45d06",
+            "date": "2018-11-29T11:14:10Z",
+            "url": "https://github.com/Flyer53/jsPanel4/commit/03fea98c61cd21b5c0afe7fcba938149eae45d06",
+            "attribution": "primary"
+          },
+          {
+            "oid": "542d8a7f3e9545f08106d51bebcc0bb5ad51661a",
+            "date": "2018-11-29T11:13:08Z",
+            "url": "https://github.com/Flyer53/jsPanel4/commit/542d8a7f3e9545f08106d51bebcc0bb5ad51661a",
+            "attribution": "primary"
+          },
+          {
+            "oid": "09dda6b3e16167363cbbc99f8102ddaaceba11ec",
+            "date": "2018-11-29T11:12:24Z",
+            "url": "https://github.com/Flyer53/jsPanel4/commit/09dda6b3e16167363cbbc99f8102ddaaceba11ec",
+            "attribution": "primary"
+          },
+          {
+            "oid": "dea1ece737ef767f1a768a0d7d89e19a33a4ff49",
+            "date": "2018-11-29T11:11:18Z",
+            "url": "https://github.com/Flyer53/jsPanel4/commit/dea1ece737ef767f1a768a0d7d89e19a33a4ff49",
+            "attribution": "primary"
+          },
+          {
+            "oid": "e184577984d93c0975ca131830407a0bcdb17e4f",
+            "date": "2018-11-29T11:10:42Z",
+            "url": "https://github.com/Flyer53/jsPanel4/commit/e184577984d93c0975ca131830407a0bcdb17e4f",
+            "attribution": "primary"
+          },
+          {
+            "oid": "83f3dcc394a4c2658b46e95e0c77f770a8694cc4",
+            "date": "2018-11-29T11:00:53Z",
+            "url": "https://github.com/Flyer53/jsPanel4/commit/83f3dcc394a4c2658b46e95e0c77f770a8694cc4",
+            "attribution": "primary"
+          }
+        ]
+      }
+    }
+  ]
+}
