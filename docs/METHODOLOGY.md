@@ -25,7 +25,7 @@ An untouched, identical, or merely stale fork therefore does not qualify. A cont
 - OIDs are deduplicated within a repository.
 - Counts are never summed globally because one commit may be reachable in multiple repository networks.
 - Private repositories and their metadata are removed before snapshot construction.
-- API truncation, unresolved pagination, authentication mismatch, or partial failure aborts the update before generated files are replaced.
+- API truncation, unresolved pagination, rate or permission errors, or partial failure aborts the update before generated files are replaced.
 
 ## Update integrity
 

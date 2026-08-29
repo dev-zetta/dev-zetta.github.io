@@ -3,6 +3,8 @@ import { readFile, rename, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
+import { format as formatWithPrettier } from "prettier";
+
 import {
   collectAttributedEvidence,
   collectForkDelta,
@@ -227,12 +229,7 @@ async function fetchRepository(
 }
 
 async function fetchProfile(client: GitHubClient) {
-  const profile = await client.rest<any>("/user");
-  if (profile.login !== accountLogin) {
-    throw new Error(
-      `Authenticated GitHub account is ${profile.login}, expected ${accountLogin}`,
-    );
-  }
+  const profile = await client.rest<any>(`/users/${accountLogin}`);
   const experienceMatch = String(profile.bio ?? "").match(/(\d+)\s+years?/i);
   if (!experienceMatch)
     throw new Error(
@@ -679,25 +676,34 @@ export async function runSync() {
     }
   }
 
-  if (previous && snapshotsAreSemanticallyEqual(previous, candidateSnapshot)) {
+  const semanticChanged =
+    !previous || !snapshotsAreSemanticallyEqual(previous, candidateSnapshot);
+  const nextSnapshot: PortfolioSnapshot = semanticChanged
+    ? candidateSnapshot
+    : (previous ?? candidateSnapshot);
+  const readme = await readFile(readmePath, "utf8");
+  const nextReadme = await formatWithPrettier(
+    replaceReadmeInventory(readme, renderReadmeInventory(nextSnapshot)),
+    { filepath: readmePath },
+  );
+  const readmeChanged = readme !== nextReadme;
+
+  if (!semanticChanged && !readmeChanged) {
     console.log(
       `No portfolio data changes (${candidateSnapshot.repositories.length} repositories verified).`,
     );
-    return { changed: false, snapshot: previous };
+    return { changed: false, snapshot: nextSnapshot };
   }
 
-  const snapshotJson = `${JSON.stringify(candidateSnapshot, null, 2)}\n`;
-  const readme = await readFile(readmePath, "utf8");
-  const nextReadme = replaceReadmeInventory(
-    readme,
-    renderReadmeInventory(candidateSnapshot),
-  );
-  await atomicWrite(snapshotPath, snapshotJson);
-  await atomicWrite(readmePath, nextReadme);
+  if (semanticChanged) {
+    const snapshotJson = `${JSON.stringify(nextSnapshot, null, 2)}\n`;
+    await atomicWrite(snapshotPath, snapshotJson);
+  }
+  if (readmeChanged) await atomicWrite(readmePath, nextReadme);
   console.log(
-    `Updated portfolio data (${candidateSnapshot.repositories.length} repositories verified).`,
+    `Updated portfolio artifacts (${nextSnapshot.repositories.length} repositories verified).`,
   );
-  return { changed: true, snapshot: candidateSnapshot };
+  return { changed: true, snapshot: nextSnapshot };
 }
 
 if (
