@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.0.0](https://github.com/dev-zetta/dev-zetta.github.io/compare/v0.1.0...v1.0.0) (2026-08-29)
+## [1.0.0](https://github.com/dev-zetta/dev-zetta.github.io/releases/tag/v1.0.0) (2026-08-29)
 
 
 ### ⚠ BREAKING CHANGES
